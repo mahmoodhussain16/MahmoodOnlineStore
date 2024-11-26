@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Registration</title>
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-gray-100">
+    <form
+      action="/products"
+      method="post"
+      class="w-96 rounded bg-white p-8 shadow-md"
+    >
+      <h2 class="mb-4 text-2xl font-bold text-green-700">Product Registration</h2>
+      
+      <!-- Product Name -->
+      <input
+        type="text"
+        placeholder="Product Name"
+        name="productName"
+        required
+        class="w-full block p-3 mb-4 border rounded-lg focus:ring-green-500 focus:border-green-500"
+      />
+      
+      <!-- Description -->
+      <input
+        type="text"
+        placeholder="Description"
+        name="description"
+        required
+        class="w-full block p-3 mb-4 border rounded-lg focus:ring-green-500 focus:border-green-500"
+      />
+      
+      <!-- Price -->
+      <input
+        type="number"
+        placeholder="Price"
+        name="price"
+        required
+        class="w-full block p-3 mb-4 border rounded-lg focus:ring-green-500 focus:border-green-500"
+      />
+      <input
+        type="number"
+        placeholder="Stock"
+        name="stock"
+        required
+        class="w-full block p-3 mb-4 border rounded-lg focus:ring-green-500 focus:border-green-500"
+      />
+
+      <!-- Register Button -->
+      <button
+        class="w-full px-4 font-semibold py-2 bg-green-700 text-white rounded-lg hover:bg-green-600"
+      >
+        Register Product
+      </button>
+
+      <!-- Redirect Link -->
+      <div class="mt-4 flex justify-center space-x-1">
+        <h4 class="text-gray-700">Already registered?</h4>
+        <a href="/" class="text-blue-600 hover:underline">Go to Home</a>
+      </div>
+    </form>
+  </body>
+</html>

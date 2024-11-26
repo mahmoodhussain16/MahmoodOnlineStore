@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Top Navbar -->
+  <header class="bg-green-700 text-white">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Product Dashboard</h1>
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="block md:hidden bg-green-600 px-4 py-2 rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <!-- Navigation Links -->
+      <nav id="nav-menu" class="hidden md:flex space-x-4">
+        <a href="#" class="py-2 px-4 rounded hover:bg-green-600">Dashboard</a>
+        <a href="#" class="py-2 px-4 rounded hover:bg-green-600">Products</a>
+        <a href="#" class="py-2 px-4 rounded hover:bg-green-600">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden bg-green-700 text-white md:hidden">
+    <nav class="flex flex-col space-y-2 p-4">
+      <a href="#" class="block py-2 px-4 rounded hover:bg-green-600">Dashboard</a>
+      <a href="#" class="block py-2 px-4 rounded hover:bg-green-600">Products</a>
+      <a href="#" class="block py-2 px-4 rounded hover:bg-green-600">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="p-4">
+    <h2 class="text-xl font-semibold mb-4">Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Product Card 1 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Product 1</h3>
+          <p class="text-gray-600 mt-2">Price: 120</p>
+          <p class="text-gray-600">Stock: 15</p>
+          <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600">View Details</button>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Product 2</h3>
+          <p class="text-gray-600 mt-2">Price: 800</p>
+          <p class="text-gray-600">Stock: 30</p>
+          <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600">View Details</button>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300x200" alt="Product 3" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Product 3</h3>
+          <p class="text-gray-600 mt-2">Price: 500</p>
+          <p class="text-gray-600">Stock: 50</p>
+          <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow p-4 text-center mt-4">
+    <p class="text-sm text-gray-500">2024 Product Dashboard. All copyrights reserved.</p>
+  </footer>
+
+  <!-- Script for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
