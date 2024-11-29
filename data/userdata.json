@@ -1,0 +1,32 @@
+[
+    {
+    "id":1,
+    "username": "Saurabh",
+    "email": "hussain@gmail.com",
+    "phoneNumber": "03132784255"
+},
+{
+    "id":2,
+    "username": "mahmood",
+    "email": "mahmood@gmail.com",
+    "phoneNumber": "XXXXXXXXXXXXXXXXX"
+} ,
+{
+    "id":3,
+    "username": "Saurabh",
+    "email": "XXXXXXXXXXXXXXXXX",
+    "phoneNumber": "XXXXXXXXXXXXXXXXX"
+},
+ {
+    "id":4,
+    "username": "Saurabh",
+    "email": "XXXXXXXXXXXXXXXXX",
+    "phoneNumber": "XXXXXXXXXXXXXXXXX"
+},
+ {
+    "id":5,
+    "username": "Saurabh",
+    "email": "XXXXXXXXXXXXXXXXX",
+    "phoneNumber": "XXXXXXXXXXXXXXXXX"
+}
+]
