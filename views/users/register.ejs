@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <form
+      action="/users"
+      method="post"
+    
+    >
+      <h2>Registration</h2>
+      <input
+        type="text"
+        placeholder="Full Name"
+        name="fullName"
+        required
+  
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        required
+       
+      />
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        name="phone"
+        required
+        pattern="[0-9]{10}"
+
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        required
+        minlength="6"
+      
+      />
+
+      <button
+       
+      >
+        Register
+      </button>
+      <div >
+        <h4 >Already registered?</h4>
+        <a href="/login">Login</a>
+      </div>
+    </form>
+  </body>
+</html>

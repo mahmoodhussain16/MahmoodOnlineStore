@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+
+    <main>
+        <p> Welcome Dashboard </p>
+        <ul>
+            <% users.forEach((user)=> { %>
+            <li>
+              <span><%= user.fullName %></span>
+              <a href="/users/<%= user.id %>">View</a>
+            </li>
+            <% }) %>
+          </ul>
+          <div>
+            <a
+              href="/"
+              >Go to Home</a
+            >
+        
+    </main>
+</body>
+
+</html>
